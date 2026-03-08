@@ -10,5 +10,11 @@
       "type": "dart",
       "program": "${cwd}/applets/dock/lib/main.dart"
     },
+    {
+      "name": "topbar",
+      "request": "launch",
+      "type": "dart",
+      "program": "${cwd}/applets/topbar/lib/main.dart"
+    },
   ]
 }

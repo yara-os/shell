@@ -1,11 +1,12 @@
-name: yaraos_shell
-description: "Shell for YaraOS"
+name: yaraos_shell_topbar
+description: "Shell topbar applet for YaraOS"
 
 publish_to: none
 homepage: https://softyes.com.br
 repository: https://github.com/yara-os/shell
 
-version: 0.1.0
+version: 0.1.0+1
+resolution: workspace
 
 environment:
   sdk: ^3.11.1
@@ -17,12 +18,5 @@ dependencies:
 
   wayland_layer_shell: ^1.0.1
 
-dev_dependencies:
-  flutter_test:
-    sdk: flutter
-
-  very_good_analysis: ^10.2.0
-
-workspace:
-  - applets/dock
-  - applets/topbar
+flutter:
+  uses-material-design: true
