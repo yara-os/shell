@@ -1,6 +1,11 @@
 {
   "cSpell.words": [
-    "yara"
+    "linux",
+    "softyes",
+    "topbar",
+    "wayland",
+    "yara",
+    "yaraos"
   ],
   "dart.flutterSdkPath": ".fvm/versions/3.41.4"
 }

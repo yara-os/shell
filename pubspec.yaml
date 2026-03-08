@@ -1,0 +1,27 @@
+name: yaraos_shell
+description: "Shell for YaraOS"
+
+publish_to: none
+homepage: https://softyes.com.br
+repository: https://github.com/yara-os/shell
+
+version: 0.1.0
+
+environment:
+  sdk: ^3.11.1
+  flutter: ^3.41.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  wayland_layer_shell: ^1.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  very_good_analysis: ^10.2.0
+
+workspace:
+  - applets/dock
