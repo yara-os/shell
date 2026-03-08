@@ -16,5 +16,11 @@
       "type": "dart",
       "program": "${cwd}/applets/topbar/lib/main.dart"
     },
+    {
+      "name": "desktop",
+      "request": "launch",
+      "type": "dart",
+      "program": "${cwd}/applets/desktop/lib/main.dart"
+    },
   ]
 }

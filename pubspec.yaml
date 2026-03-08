@@ -26,3 +26,4 @@ dev_dependencies:
 workspace:
   - applets/dock
   - applets/topbar
+  - applets/desktop
