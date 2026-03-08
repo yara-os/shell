@@ -1,0 +1,30 @@
+#!/bin/sh
+
+######################################################################
+# VERSION      : 1.0
+# LICENSE      : AGPLv3
+# GITHUB       : yara-os<https://github.com/yara-os>
+# ORGANIZATION : SoftYes TI<https://github.com/softyesti>
+# AUTHOR       : João Sereia<https://github.com/josereia>
+#
+# DESCRIPTION
+# Script to create a new YaraOS Shell applet.
+######################################################################
+
+if [ -z "$1" ]; then
+  echo "The applet name is required."
+  exit 1
+fi
+
+fvm flutter create \
+  --empty \
+  --platforms linux \
+  --org "br.com.softyes" \
+  --project-name "yaraos_shell_$1" \
+  --description "Shell $1 applet for YaraOS" \
+  ./applets/$1/
+
+rm -rf ./applets/$1/.idea
+rm -rf ./applets/$1/README.md
+rm -rf ./applets/$1/.dart_tool
+rm -rf ./applets/$1/analysis_options.yaml

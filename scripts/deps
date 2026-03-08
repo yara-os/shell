@@ -1,0 +1,16 @@
+#!/bin/sh
+
+######################################################################
+# VERSION      : 1.0
+# LICENSE      : AGPLv3
+# GITHUB       : yara-os<https://github.com/yara-os>
+# ORGANIZATION : SoftYes TI<https://github.com/softyesti>
+# AUTHOR       : João Sereia<https://github.com/josereia>
+#
+# DESCRIPTION
+# Script to install the dependencies needed to build the YaraOS Shell.
+######################################################################
+
+sudo apt install \
+  libgtk-layer-shell0 \
+  libgtk-layer-shell-dev

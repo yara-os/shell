@@ -1,0 +1,20 @@
+#!/bin/sh
+
+######################################################################
+# VERSION      : 1.0
+# LICENSE      : AGPLv3
+# GITHUB       : yara-os<https://github.com/yara-os>
+# ORGANIZATION : SoftYes TI<https://github.com/softyesti>
+# AUTHOR       : João Sereia<https://github.com/josereia>
+#
+# DESCRIPTION
+# Script to build the selected YaraOS Shell applet.
+######################################################################
+
+if [ -z "$1" ]; then
+  echo "The applet name is required."
+  exit 1
+fi
+
+cd "$(pwd)/applets/$1"
+fvm flutter build linux --release
