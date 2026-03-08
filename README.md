@@ -3,3 +3,14 @@
 # YaraOS | Shell
 
 Desktop shell powered by Flutter.
+
+## 🤖 Technologies
+
+* Dart<<https://dart.dev>>
+* Flutter<<https://flutter.dev>>
+* Kwin<<https://github.com/KDE/kwin>>
+* Wayland<<https://wayland.freedesktop.org/>>
+
+## 🖼️ Screenshots
+
+![Initial](docs/screenshots/initial.png)
